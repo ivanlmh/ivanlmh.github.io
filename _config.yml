@@ -105,14 +105,14 @@ analytics:
 # Site Author
 author:
   name             : "Ivan Meresman Higgs"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/ivan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Uruguayan engineer from Wales and Argentina."
   location         : "Paris, France"
   email            : "meresmanhiggs@ircam.fr"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
