@@ -12,63 +12,506 @@ classes: wide
         href="https://drive.google.com/drive/folders/1G_oVJ_TdiaazRYcf1y3DONcIN6LuyP80?usp=sharing">Google Drive
         Link</a></p>
 
+<hr>
+<hr>
 
 <!-- Example 1 -->
 <div class="example-container">
     <h2>Example 1</h2>
-    <h3>Name: Your Example Name Here</h3>
+    <h3>Name: Diffusion separation output from Plaja-Roglans et al.</h3>
+    <p>Trained for 99k steps.</p>
 
-    <h4>Input</h4>
+    <h4>Separated Vocals</h4>
     <audio controls>
-        <source src="/path/to/example1-input.mp3" type="audio/mpeg">
+        <source src="/audios/ex1_diffusion/out/99750/99750_mixture_separated-vocals.wav" type="audio/mpeg">
         Your browser does not support the audio tag.
     </audio>
 
-    <h4>Quantized Input</h4>
+    <h4>Separated Accompaniment</h4>
     <audio controls>
-        <source src="/path/to/example1-quantized-input.mp3" type="audio/mpeg">
+        <source src="/audios/ex1_diffusion/out/99750/99750_mixture_separated-accompaniment.wav" type="audio/mpeg">
         Your browser does not support the audio tag.
     </audio>
 
-    <h4>Target</h4>
-    <audio controls>
-        <source src="/path/to/example1-target.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
-
-    <h4>Quantized Target</h4>
-    <audio controls>
-        <source src="/path/to/example1-quantized-target.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
-
-    <h4>Output</h4>
-    <audio controls>
-        <source src="/path/to/example1-output.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
 </div>
 
 <hr>
+
 
 <!-- Example 2 -->
 <div class="example-container">
-    <!-- ... -->
-    <!-- Fill in as above, replacing paths and names accordingly -->
+    <h2>Example 2</h2>
+    <h3>Name: Make-it-Sound-Good (MSG) bass enhancement</h3>
+    <p>Trained for 50 epochs (120k steps) on the MUSDB18 train set.</p>
+
+    <h4>Input (Spleeter's output)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/bass_spleeter.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h4>Target (Ground Truth)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/bass_GT.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h4>Output (MSG System)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/bass_MSG.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+<hr>
+
+
+<!-- Example 3 -->
+<div class="example-container">
+    <h2>Example 3</h2>
+    <h3>Name: Make-it-Sound-Good (MSG) accompaniment enhancement</h3>
+    <p>Trained for 50 epochs (120k steps) on the MUSDB18 train set.</p>
+
+    <h4>Input (Spleeter's output)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/accomp_spleeter.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h4>Target (Ground Truth)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/accomp_GT.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h4>Output (MSG System)</h4>
+    <audio controls>
+        <source src="/audios/ex2_3_MSG/accomp_MSG.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
 </div>
 
 <hr>
 
-<!-- ... Continue for all your examples ... -->
+<!-- Example 4 -->
+<div class="example-container">
+    <h2>Example 4</h2>
+    <h3>Name: Soundstream by Lucidrains</h3>
+    <h4>Bean Drums Sample</h4>
+    <audio controls>
+        <source src="/audios/ex4_soundstream-lucidrains/bean_drums_sample_29500.flac" type="audio/flac">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>MUSDB Drums Sample</h4>
+    <audio controls>
+        <source src="/audios/ex4_soundstream-lucidrains/musdb_Drums_sample_10000.flac" type="audio/flac">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 5 -->
+<div class="example-container">
+    <h2>Example 5</h2>
+    <h3>Name: RAVE Codec Reconstruction</h3>
+    <p>Comparison between the representation learning phase and the adversarial fine-tuning phase.</p>
+
+    <h4>Representation Learning Phase</h4>
+    <audio controls>
+        <source src="/audios/ex5_RAVE_codec/bean_37_repLearn.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h4>Adversarial Fine-tuning Phase</h4>
+    <audio controls>
+        <source src="/audios/ex5_RAVE_codec/bean_71_adversarial.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 6 -->
+<div class="example-container">
+    <h2>Example 6</h2>
+    <h3>Name: Finetuneing EnCodec using embedding distance</h3>
+    <h4>Input (Spleeter output)</h4>
+    <audio controls>
+        <source src="/audios/ex6_emb_encodec/input(spleeter).wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Target</h4>
+    <audio controls>
+        <source src="/audios/ex6_emb_encodec/target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex6_emb_encodec/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex6_emb_encodec/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 7 -->
+<div class="example-container">
+    <h2>Example 7</h2>
+    <h3>Name: Embedding EnCodec Super Overfit</h3>
+    <h4>Input (Spleeter output)</h4>
+    <audio controls>
+        <source src="/audios/ex7_emb_encodec_superoverfit/input(spleeter).wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex7_emb_encodec_superoverfit/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex7_emb_encodec_superoverfit/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 8 -->
+<div class="example-container">
+    <h2>Example 8</h2>
+    <h3>Name: Embedding Denoise</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex8_emb_denoise/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex8_emb_denoise/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex8_emb_denoise/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex8_emb_denoise/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 9 -->
+<div class="example-container">
+    <h2>Example 9</h2>
+    <h3>Name: Residual Loss</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex9_res_loss/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex9_res_loss/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex9_res_loss/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex9_res_loss/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 10 -->
+<div class="example-container">
+    <h2>Example 10</h2>
+    <h3>Name: Embedding Loss Drums</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex10_emb_loss_drums/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex10_emb_loss_drums/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex10_emb_loss_drums/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex10_emb_loss_drums/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 11 -->
+<div class="example-container">
+    <h2>Example 11</h2>
+    <h3>Name: Transformation Bass</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex11_transf_bass/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex11_transf_bass/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex11_transf_bass/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex11_transf_bass/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 12 -->
+<div class="example-container">
+    <h2>Example 12</h2>
+    <h3>Name: Mix to Bass Basic</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex12_mix2bass_basic/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex12_mix2bass_basic/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex12_mix2bass_basic/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex12_mix2bass_basic/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 13 -->
+<div class="example-container">
+    <h2>Example 13</h2>
+    <h3>Name: Mix to Drums Basic</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex13_mix2drums_basic/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex13_mix2drums_basic/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex13_mix2drums_basic/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex13_mix2drums_basic/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 14 -->
+<div class="example-container">
+    <h2>Example 14</h2>
+    <h3>Name: Mix to Bass Transformation</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex14_mix2bass_transf/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex14_mix2bass_transf/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex14_mix2bass_transf/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex14_mix2bass_transf/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
 
 <!-- Example 15 -->
 <div class="example-container">
-    <!-- ... -->
-    <!-- Fill in as above, replacing paths and names accordingly -->
+    <h2>Example 15</h2>
+    <h3>Name: Mix to Drums Transformation</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex15_mix2drums_transf/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex15_mix2drums_transf/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex15_mix2drums_transf/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex15_mix2drums_transf/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 16 -->
+<div class="example-container">
+    <h2>Example 16</h2>
+    <h3>Name: Mix to Other Transformation</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex16_mix2other_tranf/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex16_mix2other_tranf/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex16_mix2other_tranf/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex16_mix2other_tranf/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 17 -->
+<div class="example-container">
+    <h2>Example 17</h2>
+    <h3>Name: Mix to Bass RAVE</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex17_mix2bass_RAVE/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Output</h4>
+    <audio controls>
+        <source src="/audios/ex17_mix2bass_RAVE/output.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex17_mix2bass_RAVE/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Target</h4>
+    <audio controls>
+        <source src="/audios/ex17_mix2bass_RAVE/quantized_target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</div>
+
+<hr>
+
+<!-- Example 18 -->
+<div class="example-container">
+    <h2>Example 18</h2>
+    <h3>Name: Vampnet Demucs</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex18_vampnet_demucs/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Target</h4>
+    <audio controls>
+        <source src="/audios/ex18_vampnet_demucs/target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Quantized Input</h4>
+    <audio controls>
+        <source src="/audios/ex18_vampnet_demucs/quantized_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <!-- Additional audio samples can be added if needed -->
+</div>
+
+<hr>
+
+<!-- Example 19 -->
+<div class="example-container">
+    <h2>Example 19</h2>
+    <h3>Name: Vampnet Mixture</h3>
+    <h4>Input</h4>
+    <audio controls>
+        <source src="/audios/ex19_vampnet_mixture/input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Target</h4>
+    <audio controls>
+        <source src="/audios/ex19_vampnet_mixture/target.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <h4>Reconstructed Input</h4>
+    <audio controls>
+        <source src="/audios/ex19_vampnet_mixture/reconstructed_input.wav" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <!-- Additional audio samples can be added if needed -->
 </div>
 
 
 
+<hr>
+<hr>
 
 
 <p>Extra examples of VampNet predictions are here:</p>
