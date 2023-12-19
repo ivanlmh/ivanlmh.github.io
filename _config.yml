@@ -108,7 +108,7 @@ author:
   avatar           : "/images/ivan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Uruguayan engineer from Wales and Argentina."
   location         : "Paris, France"
-  email            : "meresmanhiggs@ircam.fr"
+  email            : "ivan.meresman@gmail.com"
   links:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
