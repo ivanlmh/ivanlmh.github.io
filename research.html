@@ -1,0 +1,128 @@
+---
+title: "Research Projects"
+layout: single
+permalink: /research/
+author_profile: true
+classes: wide
+---
+
+I have worked on short-term research projects as part of my undergraduate, graduate studies, and independently. Some
+with university labs, as well as in the industry.<br>
+
+In most cases the results were not made public in any way. Here is a list of some of them with a brief description.
+
+
+<h2>Source Separation: A Generative Approach</h2>
+<b>Masters research internship at Deezer Research, Paris.</b><br>
+
+<b>Supervision:</b> Romain Hennequin and Gabriel Meseguer Brocal<br>
+
+<b>Keywords:</b> Source separation, music generation, enhancement, neural codecs, token-based generation<br>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('project1')">
+        <b>Abstract</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="project1" class="dropdown-content">
+        <!-- Project description here -->
+        Music source separation is the decomposition of an audio recording into the recordings of its individual sources. It
+        plays an integral role in applications ranging from musicological tasks such as transcription to practical
+        industrial applications such as karaoke.<br>
+        In this dissertation, we explore the complex task of music source separation, examining the nuances of current
+        challenges in the field and presenting novel methods to overcome them.<br>
+        Although state-of-the-art deep learning approaches have made significant progress, they often introduce distortions,
+        artefacts and other perceptual inaccuracies.<br>
+        We propose a paradigm shift towards prioritising auditory experience over high precision in the reconstruction of a
+        reference target.<br>
+        Our research presents a generative approach to the task, using models currently employed for automatic music
+        generation to approach source separation and separation enhancement in a less conditioned way.<br>
+        The primary goal is to improve sound quality, even if this means deviating from the original target, thus examining
+        the essence of what makes audio "good" or "authentic" without being tied to direct waveform or spectrogram
+        comparisons.<br>
+        To this end, we use token-based audio generation and exploit neural codec architectures to achieve a balance between
+        fidelity of reconstruction of the original source and perceived audio quality.<br>
+        While our research has had its challenges, partly due to the rapidly evolving field of automatic music generation
+        and the early-stage nature of some of the proposed methods, our work serves as a fundamental step in understanding the
+        potential of token-based music generation in highly conditioned tasks.<br>
+        The work concludes by highlighting the need for a holistic approach to music source separation, one that aligns with
+        the human auditory experience and expands the horizons of musicians and listeners alike.
+    </div>
+</div>
+
+<h2>Timbre and Choral Blending Analysis of Uruguayan Murga Singing</h2>
+<b> 
+    Independent research project with a short paper accepted at <a href="https://timbreconference.org/timbre2023/schedule/">TIMBRE2023</a> and a conference paper accepted at <a href="https://www.caicu.uy/">CAICU2023</a>.<br>
+</b>
+A first approach to computationally aided musicological analysis of Murga singing through a comparative study.
+
+<h2>Chamber Music Recording and Informed Music Source Separation</h2>
+<b>Group project at the ATIAM Masters, Ircam.</b><br>
+<b>Supervision:</b> Benoit Fabre and Mathieu Fontaine<br>
+<b>Keywords:</b> Music, Source separation, Non-Negative Matrix Factorization, Live Recording, Acoustics<br>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('project3')">
+        <b>Abstract</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="project3" class="dropdown-content">
+        <!-- Project description here -->
+        Music Source Separation (MSS) is the process of separating individual audio signals from a mixed recording containing
+        multiple sound sources, such as different musical instruments, vocals and ambient noise. Its various applications
+        include remixing, transcription and music recommendation.<br>
+        In the context of real acoustic recordings, the separation task is particularly challenging due to the complexity and
+        variability of acoustic instruments and recording conditions such as room acoustics and microphone directivity.
+        We propose the use of Non-negative Matrix Factorization (NMF) algorithms for this task, and in our multi-channel
+        setting, we aim to implement efficient, conditioned versions of this algorithm to be applied to musical recordings
+        performed in a known and controlled context. We investigate methods of informing this algorithm by conditioning on
+        temporal and spectral information from the instruments, that were specifically registered at the time of the recording
+        for this purpose.<br>
+        To this end, we conducted a professional-level recording of a chamber music quintet.<br>
+        We have compared our results with other state-of-the-art algorithms, obtaining comparable results on benchmark datasets,
+        and we have carried out subjective evaluation according to the MUSHRA protocol, where we see a good performance of our
+        algorithm. We observe a strong effect of the processing of the recording, which helps or hinders the separation
+        depending on the instrument.<br>
+        Our approach confirms the versatility of the FastMNMF algorithm and the possibility of extending and making these
+        algorithms more versatile. Audio results can be heard on our website.
+    </div>
+</div>
+
+
+
+<h2>Predicting Wind Turbine Power with Deep Learning</h2>
+<b>Project undertaken as a Assistant Researcher at the Institute of Electrical Engineering, University of the Republic</b><br>
+<b>Supervision:</b> Pablo Massaferro<br>
+Research into Deep Learning applications for modelling of wind flux in wind farms. <br>
+
+<!-- <h2>Automatic SoundScape Generation for smart-homes | Khimo R\&D</h2>
+Research and Development of generative music systems for the creation of artificial soundscapes: interactive soundtracks
+for smart-homes and smart-spaces using domotics equipment. -->
+
+
+<h2>Music Style Translation with Supervision DL methods</h2>
+<b>Year-long "research and innovation project" as an M1 student with the ADASP group, Telecom Paris.</b><br>
+<b>Supervision:</b> Ondrej Cífka, Gaël Richard and Umut Simsekli
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('project6')">
+        <b>Abstract</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="project6" class="dropdown-content">
+        <!-- Project description here -->
+        Style transfer and domain translation have recently experienced a surge in popularity as a research topic, and applications in text and image have obtained excellent results for language translation and artistic effects respectively. In the case of music, it has not been so successful. Partly because of the vagueness of what might be defined as style in a musical piece, and partly because of the scarcity of large datasets on which to work on with Deep Learning models that have provided state of the art results in similar areas of study. In this project we worked on adapting the work by <a href="https://zenodo.org/records/3527878">Cífka et al. (2019)</a> on symbolic music -which was the first to present a fully supervised algorithm for the task of style translation and transfer- to work on audio inputs. We performed a parallel comparison of the performance of the two models.
+</div>
+</div>
+
+
+<script>
+function toggleAbstract(id) {
+    var x = document.getElementById(id);
+    var arrow = x.previousElementSibling.querySelector('.arrow');
+    if (x.style.maxHeight){
+        x.style.maxHeight = null;
+        arrow.innerHTML = "&darr;";
+    } else {
+        x.style.maxHeight = x.scrollHeight + "px";
+        arrow.innerHTML = "&uarr;";
+    } 
+}
+</script>

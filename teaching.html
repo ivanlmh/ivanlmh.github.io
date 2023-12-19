@@ -1,0 +1,94 @@
+---
+title: "Teaching"
+layout: single
+permalink: /teaching/
+author_profile: true
+classes: wide
+---
+
+I have worked as a teaching assistant at the University of the Republic (Uruguay), both at the Faculty of Engineering in
+Montevideo and at the Regional center in the city of Rocha.
+
+<h2>Faculty of Engineering</h2>
+
+<h3>2022 Audio Digital Signal Processing</h3>
+Advanced course of the electrical Engineering degree.<br>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('course1')">
+        <b>Course topics</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="course1" class="dropdown-content">
+        <ul>
+            <li>Introduction to audio processing</li>
+            <li>Speech and audio signals</li>
+            <li>Auditory perception</li>
+            <li>Digital filters with audio applications</li>
+            <li>Sound synthesis</li>
+            <li>Short time analysis of audio signals</li>
+            <li>Homomorphic Analysis</li>
+            <li>Linear Prediction Analysis</li>
+            <li>Time-frequency processing</li>
+            <li>Spectral Modelling Analysis</li>
+            <li>Speech and audio coding</li>
+            <li>Music information retrieval</li>
+        </ul>
+    </div>
+</div>
+
+<h3>2021 Introduction to Machine Learning for Scientific Applications</h3>
+Masters course for biology, psychology and non-engineering grad students.<br>
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('course2')">
+        <b>Course topics</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="course2" class="dropdown-content">
+        <ul>
+            <li>Introduction to Machine Learning</li>
+            <li>Supervised learning</li>
+            <li>Unsupervised learning</li>
+            <li>Representation and modelling</li>
+            <li>State of the art: Random Forests and Deep Learning </li>
+            <li>Selection and evaluation</li>
+            <li>Case studies</li>
+        </ul>
+    </div>
+</div>
+
+
+<h2>East Regional University Center (CURE-Rocha)</h2>
+<h3>2019 Modulation and Signal Processing</h3>
+Main teacher of the exercises/practical class. Course from the Telecommunications Degree. <br>
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('course3')">
+        <b>Course topics</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="course3" class="dropdown-content">
+        <ul>
+            <li>Sampling theorem</li>
+            <li>Introduction to the Design of Digital Filters</li>
+            <li>Signal and Noise Models</li>
+            <li>Digital Transmission in Baseband</li>
+            <li>PCM</li>
+            <li>Digital Modulation</li>
+            <li>AM and FM Analog Modulation</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<script>
+    function toggleAbstract(id) {
+        var x = document.getElementById(id);
+        var arrow = x.previousElementSibling.querySelector('.arrow');
+        if (x.style.maxHeight){
+            x.style.maxHeight = null;
+            arrow.innerHTML = "&darr;";
+        } else {
+            x.style.maxHeight = x.scrollHeight + "px";
+            arrow.innerHTML = "&uarr;";
+        } 
+    }
+    </script>
