@@ -107,8 +107,8 @@ author:
   name             : "Ivan Meresman Higgs"
   avatar           : "/images/ivan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Uruguayan engineer from Wales and Argentina."
-  location         : "Paris, France"
-  email            : "ivan.meresman@gmail.com"
+  location         : "London, UK"
+  email            : "meresman.higgs@gmail.com"
   links:
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
