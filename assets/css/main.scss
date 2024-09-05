@@ -10,3 +10,42 @@ search: false
 
 // Custom variables
 @import "dropdown";
+
+
+
+// Import Montserrat font from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// Override the body font family
+body {
+  font-family: 'Montserrat', sans-serif;
+//   text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* Override Magnific Popup's font-family */
+.mfp-counter,
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.masthead__inner-wrap {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+.masthead__title {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+.masthead__tagline {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+// all the sidebar elements but .fas nor .fab
+.sidebar *:not(.fas):not(.fab) {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+  

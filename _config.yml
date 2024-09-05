@@ -296,3 +296,7 @@ defaults:
       comments: # true
       share: true
       related: true
+
+webfonts:
+  - family: "Montserrat"
+    weights: "400,700" # You can specify different weights as needed
