@@ -25,6 +25,7 @@ In most cases the results were not made public in any way. Here is a list of som
     </button>
     <div id="project1" class="dropdown-content">
         <!-- Project description here -->
+        <br>
         Music source separation is the decomposition of an audio recording into the recordings of its individual sources. It
         plays an integral role in applications ranging from musicological tasks such as transcription to practical
         industrial applications such as karaoke.<br>
@@ -46,6 +47,7 @@ In most cases the results were not made public in any way. Here is a list of som
         potential of token-based music generation in highly conditioned tasks.<br>
         The work concludes by highlighting the need for a holistic approach to music source separation, one that aligns with
         the human auditory experience and expands the horizons of musicians and listeners alike.
+        <br>
     </div>
 </div>
 
@@ -66,6 +68,7 @@ A first approach to computationally aided musicological analysis of Murga singin
     </button>
     <div id="project3" class="dropdown-content">
         <!-- Project description here -->
+        <br>
         Music Source Separation (MSS) is the process of separating individual audio signals from a mixed recording containing
         multiple sound sources, such as different musical instruments, vocals and ambient noise. Its various applications
         include remixing, transcription and music recommendation.<br>
@@ -83,6 +86,7 @@ A first approach to computationally aided musicological analysis of Murga singin
         depending on the instrument.<br>
         Our approach confirms the versatility of the FastMNMF algorithm and the possibility of extending and making these
         algorithms more versatile. Audio results can be heard on our website.
+        <br>
     </div>
 </div>
 
@@ -108,17 +112,24 @@ for smart-homes and smart-spaces using domotics equipment. -->
     </button>
     <div id="project6" class="dropdown-content">
         <!-- Project description here -->
-        Style transfer and domain translation have recently experienced a surge in popularity as a research topic, and applications in text and image have obtained excellent results for language translation and artistic effects respectively. In the case of music, it has not been so successful. Partly because of the vagueness of what might be defined as style in a musical piece, and partly because of the scarcity of large datasets on which to work on with Deep Learning models that have provided state of the art results in similar areas of study. In this project we worked on adapting the work by <a href="https://zenodo.org/records/3527878">Cífka et al. (2019)</a> on symbolic music -which was the first to present a fully supervised algorithm for the task of style translation and transfer- to work on audio inputs. We performed a parallel comparison of the performance of the two models.
+        <br>
+        Style transfer and domain translation have recently experienced a surge in popularity as a research topic, and applications in text and image have obtained excellent results for language translation and artistic effects respectively.
+        <br>
+        In the case of music, it has not been so successful. Partly because of the vagueness of what might be defined as style in a musical piece, and partly because of the scarcity of large datasets on which to work on with Deep Learning models that have provided state of the art results in similar areas of study.
+        <br>
+        In this project we worked on adapting the work by <a href="https://zenodo.org/records/3527878">Cífka et al. (2019)</a> on symbolic music -which was the first to present a fully supervised algorithm for the task of style translation and transfer- to work on audio inputs. We performed a parallel comparison of the performance of the two models.
+        <br>
 </div>
 </div>
+
 
 
 <script>
 function toggleAbstract(id) {
     var x = document.getElementById(id);
     var arrow = x.previousElementSibling.querySelector('.arrow');
-    if (x.style.maxHeight){
-        x.style.maxHeight = null;
+    if (x.style.maxHeight && x.style.maxHeight !== "0px") {
+        x.style.maxHeight = "0px";
         arrow.innerHTML = "&darr;";
     } else {
         x.style.maxHeight = x.scrollHeight + "px";

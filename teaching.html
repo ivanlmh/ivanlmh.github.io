@@ -12,7 +12,7 @@ Montevideo and at the Regional center in the city of Rocha.
 <h2>Faculty of Engineering</h2>
 
 <h3>2022 Audio Digital Signal Processing</h3>
-Advanced course of the electrical Engineering degree.<br>
+Advanced course of the Electrical Engineering degree.<br>
 
 <div class="dropdown">
     <button class="dropdown-btn" onclick="toggleAbstract('course1')">
@@ -37,7 +37,7 @@ Advanced course of the electrical Engineering degree.<br>
 </div>
 
 <h3>2021 Introduction to Machine Learning for Scientific Applications</h3>
-Masters course for biology, psychology and non-engineering grad students.<br>
+Masters course for Biology, Psychology and non-Engineering graduate students.<br>
 <div class="dropdown">
     <button class="dropdown-btn" onclick="toggleAbstract('course2')">
         <b>Course topics</b> <span class="arrow">&darr;</span>
@@ -83,8 +83,8 @@ Main teacher of the exercises/practical class. Course from the Telecommunication
     function toggleAbstract(id) {
         var x = document.getElementById(id);
         var arrow = x.previousElementSibling.querySelector('.arrow');
-        if (x.style.maxHeight){
-            x.style.maxHeight = null;
+        if (x.style.maxHeight && x.style.maxHeight !== "0px") {
+            x.style.maxHeight = "0px";
             arrow.innerHTML = "&darr;";
         } else {
             x.style.maxHeight = x.scrollHeight + "px";

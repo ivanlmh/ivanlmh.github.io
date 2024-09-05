@@ -25,11 +25,23 @@
     background-color: #777777;
 }
 
+
 .dropdown-content {
     max-height: 0;
     overflow: hidden;
     background-color: #3f3f3f;
-    padding: 0px 8px;
+    padding: 0px 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     width: 100%;
     transition: max-height 0.2s ease-out;
+    font-size: 18px;
+    text-align: justify;
+    box-sizing: border-box; /* Include padding in height calculation */
+
 }
+
+.dropdown-content br {
+    display: block; /* Ensure <br> elements behave like block elements */
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+  }

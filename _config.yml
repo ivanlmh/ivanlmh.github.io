@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Ivan Meresman Higgs"
   avatar           : "/images/ivan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Uruguayan engineer from Wales and Argentina."
+  bio              : "Uruguayan Engineer from Wales and Argentina."
   location         : "London, UK"
   email            : "meresman.higgs@gmail.com"
   links:
