@@ -11,6 +11,42 @@ with university labs, as well as in the industry.<br>
 
 In most cases the results were not made public in any way. Here is a list of some of them with a brief description.
 
+<h2>Automatic Music Metadata Extraction</h2>
+<b>Research Assistant at Centre for Digital Music, Queen Mary University of London</b><br>
+<b>Collaboration:</b> InnovateUK-funded project with Stage<br>
+<b>Keywords:</b> Sample identification, music information retrieval, graph neural networks, automatic lyrics transcription, source separation<br>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('sampleid')">
+        <b>Abstract</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="sampleid" class="dropdown-content">
+        <br>
+        This project focuses on developing deep learning approaches for automatic music metadata extraction, my focus was on automatic sample identification and I collaborated on song lyric transcription.<br>
+        <br>
+        <b>Sample Identification:</b> Automatic sample identification (ASID), the detection and identification of portions of audio recordings that have been reused in new musical works, is an essential but challenging task in the field of audio query-based retrieval. While a related task, audio fingerprinting, has made significant progress in accurately retrieving musical content under "real world" (noisy, reverberant) conditions, ASID systems struggle to identify samples that have undergone musical modifications. Thus, a system robust to common music production transformations such as time-stretching, pitch-shifting, effects processing, and underlying or overlaying music is an important open challenge.<br>
+In this work, we propose a lightweight and scalable encoding architecture employing a Graph Neural Network within a contrastive learning framework. Our model uses only 9% of the trainable parameters compared to the current state-of-the-art system while achieving comparable performance, reaching a mean average precision (mAP) of 44.2%.<br>
+To enhance retrieval quality, we introduce a two-stage approach consisting of an initial coarse similarity search for candidate selection, followed by a cross-attention classifier that rejects irrelevant matches and refines the ranking of retrieved candidates - an essential capability absent in prior models. In addition, because queries in real-world applications are often short in duration, we benchmark our system for short queries using new fine-grained annotations for the Sample100 dataset, which we publish as part of this work. <br>
+        <br>
+        <b>Lyric Transcription:</b> We investigated the impact of music source separation on automatic lyrics transcription using state-of-the-art ASR models, systematically evaluating performance on original audio, separated vocals, and vocal stems across short-form and long-form transcription tasks.<br>
+    </div>
+</div>
+
+<h2>Custom Speech Recognition for Speakers with Aphasia</h2>
+<b>Freelance Project Lead Engineer at Interamerican Institute for Disability and Inclusive Development (iiDi)</b><br>
+<b>Keywords:</b> Automatic speech recognition, aphasia, accessibility, disability inclusion, interdisciplinary collaboration<br>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleAbstract('asr-aphasia')">
+        <b>Abstract</b> <span class="arrow">&darr;</span>
+    </button>
+    <div id="asr-aphasia" class="dropdown-content">
+        <br>
+        This project focused on developing a custom Automatic Speech Recognition (ASR) system specifically designed for speakers with aphasia and other speech disorders. Aphasia affects language production and comprehension, making conventional ASR systems inadequate for this population.<br>
+        The work involved leading the technical research and development while coordinating closely with an interdisciplinary team including psychologists, social workers, and disability and inclusion experts. This collaboration was essential to ensure the system addressed the real needs of users and their support networks.<br>
+        The project also established partnerships with regional and international NGOs to facilitate future deployment and continued development of accessible speech technologies.<br>
+    </div>
+</div>
 
 <h2>Source Separation: A Generative Approach</h2>
 <b>Masters research internship at Deezer Research, Paris.</b><br>
@@ -122,7 +158,22 @@ for smart-homes and smart-spaces using domotics equipment. -->
 </div>
 </div>
 
+<h2>Publications</h2>
 
+<ul>
+    <li>Bhattacharjee, A., <b>Meresman Higgs, I.</b>, Sandler, M., & Benetos, E. (2025). "Refining music sample identification with a self-supervised graph neural network", <i>ISMIR 2025</i></li>
+    
+    <li>Syed, J., <b>Meresman Higgs, I.</b>, Cífka, O., & Sandler, M. (2025). "Exploiting Music Source Separation for Automatic Lyrics Transcription with Whisper", <i>ICME 2025</i></li>
+    
+    <li><b>Meresman Higgs, I.</b> (2023). "Timbre and Choral Blending Analysis of Uruguayan Murga Singing", <i>Timbre 2023</i></li>
+    
+    <li><b>Meresman Higgs, I.</b> (2023). "El Timbre y la Interpretación Coral de la Murga Uruguaya: Una primera aproximación desde la Musicología Computacional", <i>CAICU 2023</i></li>
+</ul>
+
+<h2>Conference Organization</h2>
+
+<b>CAICU - Congreso Académico Interdisciplinario sobre Carnaval Uruguayo</b> (2023, 2025)<br>
+Co-organizer and proceedings editor for the interdisciplinary academic conference on Uruguayan carnival, bringing together researchers from multiple disciplines to study the cultural, artistic, and social dimensions of carnival.
 
 <script>
 function toggleAbstract(id) {
